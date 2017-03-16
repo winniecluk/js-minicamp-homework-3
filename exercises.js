@@ -67,7 +67,7 @@ function verifyPassword(user, password) {
   //check to see if the provided password matches the password property on the user object
   //return true if they match
   //otherwise return false
-  return (password === user.password ? true : false);
+  return password === user.password;
 }
 
 function updatePassword(user, newPassword) {
